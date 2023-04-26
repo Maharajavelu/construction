@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futurehaus</title>
+    <link rel="stylesheet" href="/static/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+    <section id="navbar">
+        <div class="img">
+            <img src="/static/img11.png" class="logo" alt="Global">
+            <span class="brand">Future Haus</span>
+        </div>
+        <span class="list">
+            <i class="fa fa-list-ul" aria-hidden="true"></i>
+        </span>
+        <ul class="nav-links">
+            <li class="btn-donate"><a href="/">Home</a></li>
+            <li class="btn-donate"><a href="/builderinfo">Builder login</a></li>
+            <li class="btn-donate"><a href="/userinfo">User login</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ul>
+    </section>
+    <script>
+        let navbar = document.querySelector(".list");
+        let links = document.querySelector(".nav-links");
+
+        navbar.addEventListener('click',()=>{
+          links.classList.toggle("nav-show");
+        })
+      </script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+/* HEADER CONTENT */
+body {
+  background-image: radial-gradient(
+              rgba(14, 13, 13, 0.74),
+              rgba(88, 88, 85, 0.384)), url(
+'/static/img3.jpg');
+  background-repeat: no-repeat;
+  /* prevent the image from repeating */
+  background-size: cover;
+  /* make the image cover the entire background */
+  background-position: center center;
+  /* center the image horizontally and vertically */
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Julee&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+/*
+font-family: 'Lobster', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Sono', sans-serif; */
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
+}
+
+
+
+.b .box {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  /* From https://css.glass */
+  background: rgba(191, 148, 123, 0.43);
+  border-radius: 16px;
+
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 3px solid rgb(218, 103, 32);
+}
+
+.b .box h5{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  border-radius: 50%;
+  padding: 5px;
+  text-shadow: 1px -2px 6px rgb(235, 9, 9);
+  color: rgb(228, 212, 212);
+  font-size: 25px;
+}
+
+.b .box .leftlogbox {
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.b .box .leftlogbox img {
+  width: 500px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+}
+
+.b .box .rightlogbox {
+  border-left: 1px solid grey;
+  width: 500px;
+  height: 600px;
+  padding: 20px;
+  background: linear-gradient(#be462508 0%, #1e066000 100%);
+  border-radius: 16px;
+  overflow-y: scroll;
+}
+
+.b .box .rightlogbox h3 {
+  font-family: 'Julee', cursive;
+  font-size: 40px;
+  color: #dadada;
+  letter-spacing: 1.5px;
+  text-shadow: 1px -2px 6px rgb(235, 9, 9);
+  width: fit-content;
+}
+
+.b .box .rightlogbox p {
+  font-family: 'Roboto Slab', serif;
+  margin: 10px;
+  width: fit-content;
+  font-size: 18px;
+  color: rgb(18, 19, 18);
+  text-shadow: 1px -2px 6px rgb(184, 186, 184);
+}
+
+
+.rightlogbox h2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  font-family: 'Roboto Slab', serif;
+  vertical-align: middle;
+  text-decoration: none;
+  background: rgb(194, 22, 22);
+  border-radius: 5px;
+  padding: 02px;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.rightlogbox h2:hover {
+  color: rgb(17, 200, 63);
+  text-shadow: 1px -2px 6px rgb(47, 235, 9);
+}
+
+#space {
+  margin-bottom: 80px;
+}
+
+.form form {
+  margin-top: 90px;
+}
+
+.form .input-field {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  background-color: #0f0f0f00;
+  width: auto;
+  height: 35px;
+}
+
+.form .input-field input {
+  border: none;
+  padding: 15px;
+  border-radius: 1rem;
+  background: #121111;
+  box-shadow: 20px 20px 60px #c5c5c53a,
+    -20px -20px 60px #ffffff1b;
+  transition: 0.3s;
+
+
+  margin-left: 0px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(213, 111, 111);
+  outline: none;
+  height: 20px;
+  color: rgb(248, 247, 247);
+  font-size: 16px;
+}
+
+.input-field input:focus {
+  outline-color: #ac1717;
+  background: orangered;
+  box-shadow: inset 20px 20px 60px #bb1818,
+    inset -20px -20px 60px #a31d1d;
+  transition: 0.3s;
+  border-color: black;
+}
+
+.form .input-field label {
+  width: 130px;
+  display: flex;
+  justify-content: flex-start;
+  color: aliceblue;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #ab6f1a00;
+}
+
+input[type="submit"] {
+  color: #ebeaea;
+  padding: 0em 1em;
+  width: 100px;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: orangered;
+  border: 1px solid #23200e;
+  transition: all .3s;
+  margin-left: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+input[type="submit"]:focus {
+  color: #666;
+  box-shadow: 6px 6px 12px #c5c5c5,
+    -6px -6px 12px #ffffff;
+}
+
+.form .input-field {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.register .form .input-field label {
+  width: 200px;
+  color: aliceblue;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #ab6f1a00;
+}
+
+.register .form .input-field input {
+  border: none;
+  padding: 15px;
+  border-radius: 1rem;
+  background: #0f0f0f;
+  box-shadow: 20px 20px 60px #c5c5c53a,
+    -20px -20px 60px #ffffff1b;
+  transition: 0.3s;
+  width: 50%;
+  margin-bottom: 05px;
+  border-bottom: 1px solid rgb(213, 111, 111);
+  outline: none;
+  height: 20px;
+  color: rgb(248, 247, 247);
+  font-size: 16px;
+}
+
+.register .input-field input:focus {
+  outline-color: #ac1717;
+  background: orangered;
+  box-shadow: inset 20px 20px 60px #bb1818,
+    inset -20px -20px 60px #a31d1d;
+  transition: 0.3s;
+  border-color: black;
+}
+
+.register input[type="submit"] {
+  color: #ebeaea;
+  padding: 0em 1em;
+  width: 150px;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: orangered;
+  border: 1px solid #23200e;
+  transition: all .3s;
+  margin-left: 190px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.register input[type="submit"]:focus {
+  color: #666;
+  box-shadow: 6px 6px 12px #c5c5c5,
+    -6px -6px 12px #ffffff;
+}
